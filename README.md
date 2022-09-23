@@ -23,7 +23,7 @@
 
 # :notebook: About
 
-Template Writed on Create Next App with Typescript
+Template Writed on Create Next App with Typescript </br>
 Design template base: [Figma Proto](https://www.figma.com/file/tAcUO4he80CxDqN032yaxz/Frontend-Test?node-id=0%3A1)
 # :hammer: Technologies
 
