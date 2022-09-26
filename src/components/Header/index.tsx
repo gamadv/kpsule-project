@@ -1,0 +1,18 @@
+import Image from "next/image";
+import { Container } from "./styles";
+
+export function Header() {
+  return (
+    <Container>
+      <Image
+        src="/logo-icon.svg"
+        alt="Logo"
+        width="114px"
+        height="27px"
+      ></Image>
+      <button>
+        <Image src="/cart.svg" alt="Logo" width="34px" height="34px"></Image>
+      </button>
+    </Container>
+  );
+}
