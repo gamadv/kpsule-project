@@ -1,5 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-type ProductProps = {
+export type ProductProps = {
   id: number;
   name: string;
   brand: string;
@@ -214,7 +214,7 @@ export default function product(
       hasPrecaution: true,
     },
     {
-      id: 4108,
+      id: 4109,
       name: "Cal-Mag With B-Complex And Vitamin C",
       brand: "NOW",
       score: 21,
