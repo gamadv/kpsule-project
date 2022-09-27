@@ -1,11 +1,11 @@
 import Image from "next/image";
+import SkeletonContent from "./SkeletonContent";
+import { ProgressBar, IconCounter } from "..";
 import { useCart } from "../../context/CartContext";
 import { ProductProps } from "../../pages/api/productList";
 import { convertToEUR } from "../../utils";
-import { IconCounter } from "../IconCounter";
-import SkeletonContent from "./SkeletonContent";
-import { Container } from "./styles";
 
+import { Container } from "./styles";
 interface IProductItem {
   productList: ProductProps[];
   isLoading?: boolean;
@@ -15,6 +15,10 @@ export function ProductItem({ productList, isLoading }: IProductItem) {
   const { addToCart } = useCart();
 
   function getBiggestValue(arrayToExtractValue: Array<{ score: number }>) {
+    if (arrayToExtractValue.length === 1) {
+      return arrayToExtractValue[0].score;
+    }
+
     const getValues = arrayToExtractValue.map((object) => {
       return object.score;
     });
@@ -97,27 +101,33 @@ export function ProductItem({ productList, isLoading }: IProductItem) {
                     />
                   </div>
                   <div id="detailsContainer">
-                    <div>
+                    <div className="detailsContent">
                       <section>
                         <strong>
                           {" "}
                           Health Goals{" "}
                           {healthGoals.length > 0 && (
-                            <IconCounter number={symptoms.length} />
+                            <IconCounter number={healthGoals.length} />
                           )}
                         </strong>
                         <span>Améliorer les performances</span>
                       </section>
-                      <span>
+                      <ProgressBar
+                        progressValue={getBiggestValue(healthGoals)}
+                        progressWidth={64}
+                        bgColor="#f5f7fe"
+                        progressTrack={58}
+                        trackColor="#BDBDBD"
+                      >
                         <Image
                           src="/images/medal.svg"
                           alt="Medal"
                           width="24px"
                           height="24px"
                         />
-                      </span>
+                      </ProgressBar>
                     </div>
-                    <div>
+                    <div className="detailsContent">
                       <section>
                         <strong>
                           {" "}
@@ -128,14 +138,20 @@ export function ProductItem({ productList, isLoading }: IProductItem) {
                         </strong>
                         <span>Mémorie</span>
                       </section>
-                      <span>
+                      <ProgressBar
+                        progressValue={getBiggestValue(symptoms)}
+                        progressWidth={64}
+                        bgColor="#f5f7fe"
+                        progressTrack={58}
+                        trackColor="#BDBDBD"
+                      >
                         <Image
                           src="/images/brain.svg"
                           alt="Medal"
                           width="24px"
                           height="24px"
                         />
-                      </span>
+                      </ProgressBar>
                     </div>
                   </div>
                   <button onClick={() => handleAddToCart(id)}>

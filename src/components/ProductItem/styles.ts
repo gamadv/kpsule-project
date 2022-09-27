@@ -77,7 +77,7 @@ export const Container = styled.section`
         margin: 1.5rem 0;
         padding: 1.063rem 1rem;
 
-        div {
+        .detailsContent {
           display: flex;
           justify-content: space-between;
           width: 100%;

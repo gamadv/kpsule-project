@@ -1,13 +1,20 @@
 import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
-import { Container } from "./styles";
 import { useCart } from "../../context/CartContext";
-import { IconCounter } from "../IconCounter";
+import { IconCounter, ProgressBar } from "../index";
+
+import { Container } from "./styles";
+
+const cartValues = {
+  "1": 25,
+  "2": 50,
+  "3": 75,
+  "4": 100,
+};
 
 export function Header() {
   const { cart } = useCart();
   const [windowScroll, setWindowScroll] = useState(0);
-  
 
   const hasCart = cart?.length > 0;
 
@@ -26,22 +33,30 @@ export function Header() {
 
   return (
     <Container hasWindowScrolled={hasWindowScrolled}>
-      <div>
+      <div id="headerContent">
         <Image
           src="/images/logo-icon.svg"
           alt="Logo"
           width="114px"
           height="27px"
-        ></Image>
-        <button>
-          {hasCart && <IconCounter number={cart.length}/>}
-          <Image
-            src="/images/cart.svg"
-            alt="Logo"
-            width="34px"
-            height="34px"
-          ></Image>
-        </button>
+        />
+        <div id="cartContainer">
+          {hasCart && <IconCounter number={cart.length} />}
+          <ProgressBar
+            progressValue={cartValues[cart?.length]}
+            progressWidth={42}
+            bgColor="#ffff"
+            progressTrack={34}
+            trackColor="transparent"
+          >
+            <Image
+              src="/images/cart.svg"
+              alt="Logo"
+              width="34px"
+              height="34px"
+            />
+          </ProgressBar>
+        </div>
       </div>
     </Container>
   );
