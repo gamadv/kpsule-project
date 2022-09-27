@@ -1,6 +1,5 @@
 <h1 align=center>
-  <img src="https://ui-lib.com/blog/wp-content/uploads/2021/12/nextjs-boilerplate-logo.png" width=35 height=35 />
-  Next JS Template With TypeScript  
+  <img src="public/images/logo-icon.svg" width=100  />
 </h1>
 
 <div align="center" style="margin-top: 30px;">  
@@ -13,18 +12,39 @@
      <a href="https://www.typescriptlang.org/" target="_blank"  rel="noopener noreferrer" >
         <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" height="25"/>
     </a>&nbsp;&nbsp;
+     <a href="https://styled-components.com/" target="_blank"  rel="noopener noreferrer" >
+        <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" height="25"/>
+    </a>&nbsp;&nbsp;
 </div>
 
 <h4 align=center>
   <a href="#notebook-about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#hammer-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#black_nib-getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;
+  <a href="#black_nib-getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#heavy_plus_sign-upgrades">Upgrades</a>
 </h4>
 
 # :notebook: About
 
-Template Writed on Create Next App with Typescript </br>
+<h2>
+  This is a PWA app
+</h2>
+
+Project created based on Create Next App with Typescript </br>
 Design template base: [Figma Proto](https://www.figma.com/file/tAcUO4he80CxDqN032yaxz/Frontend-Test?node-id=0%3A1)
+
+This project consume data from Next API routes as a Serveless client. [API routes](https://nextjs.org/docs/api-routes/introduction). </br>
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+
+Endpoint: [http://localhost:3000/api/productList](http://localhost:3000/api/productList). </br>
+This endpoint can be edited in <i><kbd> [pages/api/productList.ts](./src/pages/api/productList.ts) </kbd></i>
+
+
+
+
+Endpoint: 
+
 # :hammer: Technologies
 
 #### 📃 Dependencies: -> <i><kbd> [package.json](./package.json) </kbd></i>
@@ -32,6 +52,9 @@ Design template base: [Figma Proto](https://www.figma.com/file/tAcUO4he80CxDqN03
 - [x] <b>[React Js](https://reactjs.org/):</b> <i>JS Lib to build interface</i>
 - [x] <b>[Typescript](https://www.typescriptlang.org/):</b> <i>It's written in TypeScript</i>
 - [x] <b>[Next Js](https://nextjs.org/docs/getting-started):</b> <i>Project creation tool </i>
+- [x] <b>[Styled Components](https://styled-components.com/):</b> <i>Best tool to powerful our styles</i>
+- [x] <b>[Axios](https://axios-http.com/docs/intro):</b> <i>Best lib to manage Rest API's </i>
+- [x] <b>[React Loading Skeleton](https://www.npmjs.com/package/react-loading-skeleton):</b> <i>Lib to easier create Loading Skeleton effect </i>
 
 # :black_nib: Getting Started
 
@@ -64,14 +87,8 @@ Downloading dependencies:
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 ## Learn More
 
@@ -87,6 +104,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# :heavy_plus_sign: Upgrades:
+
+Some features are available to upgrade this app, those are:
+
+- [ ] Complete Theme Switcher to Dark Theme (base has been created);
+- [ ] Create Cart drawer component to see products added
 
 <p align=center> 
   <h6 align=center>💙 Made by 💙</h6> 
