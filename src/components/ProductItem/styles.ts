@@ -84,6 +84,15 @@ export const Container = styled.section`
           section {
             display: flex;
             flex-direction: column;
+
+            strong {
+              display: flex;
+              align-items: center;
+            }
+
+            strong + span {
+              opacity: 0.6;
+            }
           }
         }
 
@@ -118,6 +127,54 @@ export const Container = styled.section`
         min-width: 363px;
         max-width: 363px;
       }
+
+      @media screen and (max-width: 412px) {
+        min-width: 333px;
+        max-width: 333px;
+      }
     }
   }
+`;
+
+export const SkeletonDiv = styled.div`
+  display: flex;
+  gap: 1rem;
+
+  margin-top: 0.5rem;
+
+  > div {
+    margin-top: 1rem;
+  }
+`;
+export const SkeletonDiv2 = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+`;
+export const SkeletonDiv3 = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 1.5rem 0;
+  padding: 1.063rem 1rem;
+
+  background-color: #f5f7fe;
+  border-radius: 8px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 2.813rem;
+  }
+  div + div {
+    gap: 1rem;
+  }
+`;
+export const SkeletonDiv4 = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
 `;

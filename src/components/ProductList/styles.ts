@@ -3,8 +3,6 @@ import styled from "styled-components";
 export const Container = styled.section`
   padding: 1.688rem 1rem;
 
-  max-height: 4rem;
-
   > p {
     font-weight: 900;
   }
@@ -19,6 +17,13 @@ export const Container = styled.section`
     margin-inline: auto;
   }
 `;
-export const Content = styled.section`
+export const Content = styled.div`
+  margin-top: 1rem;
+`;
+
+export const SkeletonDiv = styled.div`
+  display: flex;
+  gap: 1rem;
+
   margin-top: 1rem;
 `;
