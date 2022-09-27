@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import SkeletonContent from "./SkeletonContent";
 import { ProductProps } from "../../pages/api/productList";
 import { getAllProducts } from "../../services/data/product-endpoint";
-import { ProductItem } from "../ProductItem";
-import SkeletonContent from "./SkeletonContent";
+import { ProductItem } from "..";
+
 import { Container, Content } from "./styles";
 
 export function ProductList() {
