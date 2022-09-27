@@ -20,6 +20,8 @@ export function Header() {
 
   const hasWindowScrolled = windowScroll > 200;
 
+  const parsedProgressValue = cart?.length > 4 ? 100 : cartValues[cart?.length]
+
   const watchWindowScroll = useCallback(() => {
     window.addEventListener("scroll", () => {
       setWindowScroll(window.scrollY);
@@ -43,7 +45,7 @@ export function Header() {
         <div id="cartContainer">
           {hasCart && <IconCounter number={cart.length} />}
           <ProgressBar
-            progressValue={cartValues[cart?.length]}
+            progressValue={parsedProgressValue}
             progressWidth={42}
             bgColor="#ffff"
             progressTrack={34}
