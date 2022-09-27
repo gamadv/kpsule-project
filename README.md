@@ -24,11 +24,18 @@
   <a href="#heavy_plus_sign-upgrades">Upgrades</a>
 </h4>
 
+<br>
+<img src="public/images/desktop-version.png" />
+
 # :notebook: About
 
 <h2>
-  This is a PWA app
+  This is a PWA app: </br>
+  Can be accessed on <a href="https://kpsule-project-aa69.vercel.app/">Kpsule Project URL</a> </br>
+  To install PWA Desktop -> <img src="public/images/pwa-shortcut.jpg" width=100 />
 </h2>
+
+
 
 Project created based on Create Next App with Typescript </br>
 Design template base: [Figma Proto](https://www.figma.com/file/tAcUO4he80CxDqN032yaxz/Frontend-Test?node-id=0%3A1)
@@ -36,14 +43,8 @@ Design template base: [Figma Proto](https://www.figma.com/file/tAcUO4he80CxDqN03
 This project consume data from Next API routes as a Serveless client. [API routes](https://nextjs.org/docs/api-routes/introduction). </br>
 The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-
 Endpoint: [http://localhost:3000/api/productList](http://localhost:3000/api/productList). </br>
 This endpoint can be edited in <i><kbd> [pages/api/productList.ts](./src/pages/api/productList.ts) </kbd></i>
-
-
-
-
-Endpoint: 
 
 # :hammer: Technologies
 
@@ -88,7 +89,6 @@ Downloading dependencies:
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
 
 ## Learn More
 
