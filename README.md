@@ -113,6 +113,7 @@ Some features are available to upgrade this app, those are:
 
 - [ ] Complete Theme Switcher to Dark Theme (base has been created);
 - [ ] Create Cart drawer component to see products added
+- [ ] i18n Addition 
 
 <p align=center> 
   <h6 align=center>💙 Made by 💙</h6> 
