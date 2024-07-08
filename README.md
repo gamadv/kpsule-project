@@ -3,18 +3,10 @@
 </h1>
 
 <div align="center" style="margin-top: 30px;">  
-    <a href="https://pt-br.reactjs.org/docs/getting-started.html" target="_blank"  rel="noopener noreferrer">
-        <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" height="26" 
-    </a> &nbsp;&nbsp;
-    <a href="https://nextjs.org/docs/getting-started" target="_blank"  rel="noopener noreferrer" >
-        <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" height="25"/>
-    </a>&nbsp;&nbsp;
-     <a href="https://www.typescriptlang.org/" target="_blank"  rel="noopener noreferrer" >
-        <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" height="25"/>
-    </a>&nbsp;&nbsp;
-     <a href="https://styled-components.com/" target="_blank"  rel="noopener noreferrer" >
-        <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" height="25"/>
-    </a>&nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" height="26" />
+    <img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white" height="25"/>
+    <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" height="25"/>
+    <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" height="25"/>
 </div>
 
 <h4 align=center>
@@ -29,11 +21,12 @@
 
 # :notebook: About
 
-<h2>
-  This is a PWA app: </br>
-  Can be accessed on <a href="https://kpsule-project-aa69.vercel.app/">Kpsule Project URL</a> </br>
-  To install PWA Desktop -> <img src="public/images/pwa-shortcut.jpg" width=100 />
-</h2>
+<p>
+  <strong>This is a PWA app: </br>
+    Can be accessed on <a href="https://kpsule-project-aa69.vercel.app/">Kpsule Project URL</a> </br>
+    To install PWA Desktop -> <img src="public/images/pwa-shortcut.jpg" width=100 />
+  </strong>
+</p>
 
 
 
